@@ -296,7 +296,7 @@ export default function CreateEvent() {
     </div>
   );
 }
-export function CreateEventSkeleton() {
+function CreateEventSkeleton() {
   return (
     <div className=" mx-auto">
       <Card>

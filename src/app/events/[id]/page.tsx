@@ -325,7 +325,7 @@ export default function EventDetails() {
   );
 }
 
-export function EventDetailsSkeleton() {
+function EventDetailsSkeleton() {
   return (
     <div className="mx-auto space-y-6">
       <Card>

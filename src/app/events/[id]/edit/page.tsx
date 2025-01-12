@@ -336,7 +336,7 @@ export default function EditEvent() {
   );
 }
 
-export function EditEventSkeleton() {
+function EditEventSkeleton() {
   return (
     <div className=" mx-auto">
       <Card>
