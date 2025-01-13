@@ -12,19 +12,65 @@ const outfit = Outfit({
   display: "swap",
 });
 
-// Space Grotesk font
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
   variable: "--font-space-grotesk",
   display: "swap",
 });
 
-// Fira Code font
 const firaCode = Fira_Code({
   subsets: ["latin"],
   variable: "--font-fira-code",
   display: "swap",
 });
+
+export const metadata = {
+  title: "EventHub - Event Management Platform",
+  description:
+    "Create, manage and attend events with real-time updates. A modern event management platform for organizing and discovering exciting events.",
+  keywords: [
+    "events",
+    "event management",
+    "event planning",
+    "event platform",
+    "real-time events",
+    "public events",
+  ],
+  authors: [{ name: "EventHub Team" }],
+  creator: "EventHub",
+  publisher: "EventHub",
+  formatDetection: {
+    telephone: false,
+  },
+  openGraph: {
+    title: "EventHub - Event Management Platform",
+    description: "Create, manage and attend events with real-time updates",
+    url: "https://celadon-cajeta-53d661.netlify.app",
+    siteName: "EventHub",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "EventHub - Event Management Platform",
+    description: "Create, manage and attend events with real-time updates",
+    creator: "@eventhub",
+  },
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 1,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -34,8 +80,10 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Next.js Tailwind CSS Starter</title>
+        <meta name="theme-color" content="#ffffff" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/manifest.json" />
       </head>
       <body
         className={`${outfit.variable} ${spaceGrotesk.variable} ${firaCode.variable}`}
